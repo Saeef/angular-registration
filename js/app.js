@@ -1,4 +1,4 @@
-var myApp = angular.module('myApp',['ng-route']);
+var myApp = angular.module('myApp', ['ngRoute']);
 
 myApp.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.
@@ -8,7 +8,7 @@ myApp.config(['$routeProvider', function($routeProvider) {
 		}).
 		when('/register', {
 			templateUrl: 'views/register.html',
-			controller:  'RegistrationController'
+			controller: 'RegistrationController'
 		}).
 		when('/success', {
 			templateUrl: 'views/success.html',
@@ -21,7 +21,6 @@ myApp.config(['$routeProvider', function($routeProvider) {
 
 
 }]);
-
 
 
 	
