@@ -1,6 +1,17 @@
-myApp.controller('RegistrationController',['$scope', function($scope) {
+
+
+	
+
+	myApp.controller('RegistrationController',['$scope', function($scope) {
 
 	$scope.message = "Welcome to my app";
 
 
-}]);
+	}]);
+
+
+
+
+
+
+
