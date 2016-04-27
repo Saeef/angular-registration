@@ -1,13 +1,13 @@
 
 
 <section class="card login">
-	<form name="myform" novalidate>
+	<form name="myform" ng-submit="login()" novalidate>
 
 		<div class="textintro">
 			<h1>Hi there!</h1>
 			<p>Log-in to access site</p>
-			{{user}}
-			{{password}}
+			<p ng-show="message">{{message}}</p>
+			
 		</div>
 
 		<fieldset>			
