@@ -1,19 +1,8 @@
-	myApp.controller('RegistrationController',['$scope', function($scope) {
-
-	$scope.login = function() {
-		$scope.message = "Welcome " + $scope.user.email;
-	};
+myApp.controller('RegistrationController', ['$scope', function($scope) {
+	$scope.welcome = "Register already motherfucka!";
 
 	$scope.register = function() {
-		$scope.message = "You are now registered " + $scope.user.firstname;
-	};
+		$scope.message = "thanks for registering " + $scope.firstname + " " + $scope.lastname;
+	}
 
-
-	}]);
-
-
-
-
-
-
-
+}]);

@@ -10,8 +10,10 @@
 	<script type="text/javascript" src="js/lib/angular/angular-route.min.js"></script>
 	<script type="text/javascript" src="js/lib/angular/angular-animate.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/controllers/login.js"></script>
 	<script type="text/javascript" src="js/controllers/registration.js"></script>
 	<script type="text/javascript" src="js/controllers/success.js"></script>
+	
 </head>
 <body>
 	<header>
@@ -19,8 +21,8 @@
 	</header>
 
 	<div class="page">	
-		<main class="cf" ng-view>
-			
+			<main class="cf">
+				<ng-view></ng-view>	
 		</main>
 	</div>
 </body>

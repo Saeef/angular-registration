@@ -4,24 +4,33 @@
 		<div class="textintro">
 			<h1>Register</h1>
 			<p>To access site features</p>
-			<p ng-show="message">{{ message }}</p>
+			<h2>{{ welcome }}</h2>
+			<h2>{{ message }}</h2>
+			
 		</div>
 
 		<fieldset>
 			<input type="firstname" name="firstname" 
-		     placeholder="enter your first name" ng-required="true" ng-model="user.firstname">
+		     placeholder="enter your first name" ng-model="firstname" ng-required="true">
+		     <p ng-show="myform.firstname.$invalid && myform.firstname.$touched">Please enter your first name</p>
 			<br/><br/>
-			<input type="lastname" name="lastname" 
-			 placeholder="enter your lastname" ng-required="true" ng-model="user.lastname">
+			
+			<input type="lastname" name="lastname" ng-model="lastname" ng-required="true" 
+			 placeholder="enter your lastname">
+			 <p ng-show="myform.lastname.$invalid && myform.lastname.$touched">Please enter your last name</p>
 			<br/><br/>
-			<input type="email" name="email" 
-			 placeholder="enter your email" ng-required="true" ng-model="user.email">
-			<br/><br/>
-			<input type="password" name="password" 
-			 placeholder="enter your password" ng-required="true" ng-model="user.password">
+			
+			<input type="email" name="email" ng-model="email" ng-required="true"
+			 placeholder="enter your email">
+			 <p ng-show="myform.email.$invalid && myform.email.$touched">Please enter your email</p>
 			<br/><br/>
 
-			<p ng-show="myform.email.$invalid && myform.email.$touched">You need to enter a valid email to register</p>
+			<input type="password" name="password" ng-model="password" ng-required="true"
+			 placeholder="enter your password">
+			<p ng-show="myform.password.$invalid && myform.password.$touched">Please enter your password</p>
+			<br/><br/>
+
+		
 
 		</fieldset>
 
