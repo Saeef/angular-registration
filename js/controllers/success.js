@@ -1,5 +1,5 @@
 myApp.controller('SuccessController',["$scope", function($scope) {
 
-	$scope.welcome = "Success already motherfucka!";
+	$scope.welcome = "Success already";
 
 }]);
